@@ -1,0 +1,145 @@
+/* Estilos CSS para el cuerpo y el fondo */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: grid;
+    justify-content: center; 
+    min-height: 100vh; /* Fondo del cuerpo */
+}
+
+/* Estilos CSS para el color de fondo del menú */
+.black-menu {
+    background-color: black; /* Fondo del menú */
+    color: white;
+    top: 0;
+    position: absolute;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    z-index: 1;
+    align-items: center; /* Alineación del menú */
+}
+
+/* Estilos CSS para los elementos del menú */
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos CSS para las imágenes del menú */
+.menu-item img {
+    width: 15%; 
+    border-radius: 5%;
+}
+
+
+/* Estilos CSS para el espacio entre elementos del menú */
+.menu-item span {
+    margin: 0 1%;
+    font-family: 'Kanit', sans-serif;
+    font-size: 2.3em;
+}
+
+/* Estilos CSS para los enlaces del menú */
+.menu-link {
+    position: relative; /* Enlaces del menú */
+    cursor: pointer;
+    font-family: 'Kanit', sans-serif;
+    font-size: 2.6em;
+}
+
+/* Estilos CSS para las animaciones de los enlaces del menú */
+.menu-link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.2em;
+    background-color: rgb(255, 255, 255);
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.7s;
+}
+
+/* Animación al pasar el cursor sobre los enlaces */
+.menu-link:hover::after {
+    transform: scaleX(1); 
+}
+
+
+
+/* Estilos CSS para la imagen de portada */
+.imgp {
+    display: block;
+    align-items: center;
+    width: 130em; 
+    height: 66em; 
+    z-index: 0;
+    margin-top: 6%;
+    margin-left: 5%;
+}
+
+/* Estilos CSS para el carousel */
+.img-carousel {
+    position: relative;
+    text-align: center;
+}
+
+.img-carousel img {
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.8s ease-in-out; /* Ajusta la duración según tu preferencia */
+    opacity: 1;
+}
+
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-buttons button {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    margin-left: 6%;
+    margin-right: 6.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    transition: transform 0.4s ease-in-out;
+    border-radius: 20%;
+    font-size: 2.2em;
+}
+
+/* Aplicar transformación al pasar el ratón a los botones */
+.carousel-buttons button:hover {
+    transform: scale(1.2);
+}
+
+/* Agrega una clase para la animación de desvanecimiento */
+.fade-in {
+    opacity: 1;
+    transition: opacity 1s ease-in-out; /* Ajusta la duración según tu preferencia */
+}
+
+/* Agrega una clase para la animación de desvanecimiento inversa */
+.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Ajusta la duración según tu preferencia */
+}
+
+
+.port{
+    display: flex;
+    align-items: center;
+
+}

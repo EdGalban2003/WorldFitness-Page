@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>WorldFitness</title>
+    <link rel="stylesheet" href="assets\css\styles2.css">
+</head>
+<body>
+
+
+    <div class="black-menu">
+        <div class="menu-item">
+    
+            <!-- Imagen del Menu n1 -->
+            <img src="assets\img\menu.PNG" alt="MenuIcon">
+            <span>|</span>
+            <!-- Accesos a otros apartados -->
+            <span class="menu-link" data-text="¿Quiénes somos?" onclick="redirect('0_QuienesSomos.html')">¿Quiénes somos?</span>
+            <span class="menu-link" data-text="Guías de Entrenamiento" onclick="redirect('1_Entrenamiento.html')">Guías de Entrenamiento</span>
+            <span class="menu-link" data-text="Guías de Alimentación" onclick="redirect('2_Alimentacion.html')">Guías de Alimentación</span>
+            <span class="menu-link" data-text="Tienda" onclick="redirect('3_Tienda.html')">Tienda</span>
+            <span>|</span>
+            <span class="menu-link" data-text="Contactos" onclick="redirect('4_Contactos.html')">Contactos</span>
+        </div>
+    </div>
+    
+    <script>
+        function redirect(url) {
+            window.location.href = url;
+        }
+    </script>
+
+
+
+
+    
+</body>
+</html>

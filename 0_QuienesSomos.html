@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>WorldFitness</title>
+    <link rel="stylesheet" href="assets\css\styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">  
+    <script src="assets\js\animacion.js"></script>
+</head>
+<body>
+
+
+    <div class="black-menu">
+        <div class="menu-item">
+    
+            <!-- Imagen del Menu n1 -->
+            <img src="assets\img\menu.PNG" alt="MenuIcon">
+            <span>|</span>
+            <!-- Accesos a otros apartados -->
+            <span class="menu-link" data-text="¿Quiénes somos?" onclick="redirect('0_QuienesSomos.html')">¿Quiénes somos?</span>
+            <span class="menu-link" data-text="Guías de Entrenamiento" onclick="redirect('1_Entrenamiento.html')">Guías de Entrenamiento</span>
+            <span class="menu-link" data-text="Guías de Alimentación" onclick="redirect('2_Alimentacion.html')">Guías de Alimentación</span>
+            <span class="menu-link" data-text="Tienda" onclick="redirect('3_Tienda.html')">Tienda</span>
+            <span>|</span>
+            <span class="menu-link" data-text="Contactos" onclick="redirect('4_Contactos.html')">Contactos</span>
+        </div>
+    </div>
+    
+    <script>
+        function redirect(url) {
+            window.location.href = url;
+        }
+    </script>
+
+
+<!-- Carrusel de Imágenes -->
+<div class="img-carousel">
+    <div class="carousel-buttons">
+        <button onclick="prevImage()"><i class="fa-solid fa-circle-up fa-rotate-270"></i></button>
+        <button onclick="nextImage()"><i class="fa-solid fa-circle-up fa-rotate-90"></i></button>
+    </div>
+    <img src="assets\img\portada1.png" alt="Imagen de Portada 1" class="imgp" id="carouselImg">
+</div>
+
+<script src="assets\js\animacion.js" defer></script>
+
+<script>
+    const images = [
+        "assets/img/portada1.png",
+        "assets/img/portada2.png",
+        "assets/img/portada3.png",
+        // Agrega más imágenes según sea necesario
+    ];
+
+    let currentIndex = 0;
+
+    function updateImage() {
+        document.getElementById("carouselImg").src = images[currentIndex];
+    }
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateImage();
+    }
+
+    function prevImage() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateImage();
+    }
+
+    // Iniciar el carrusel
+    updateImage();
+</script>
+
+
+    <!-- Titulos -->
+    <h1>¿Quiénes somos?</h1>
+        
+
+    <!-- Parrafos -->
+    <h3>Bienvenido a WorldFitness, tu destino definitivo para alcanzar tus objetivos de salud y bienestar. En WorldFitness, creemos en la transformación positiva a través del fitness y la nutrición, y nos dedicamos a proporcionar las herramientas y la inspiración necesarias para que alcances tu mejor versión.</h3>
+
+
+    <!-- Subtitulos -->
+    <h1>Nuestra Misión:</h1>
+
+
+    <!-- Parrafos -->
+    <h3>En WorldFitness, nuestra misión es simple pero poderosa: empoderar a las personas para que adopten un estilo de vida saludable y activo. Nos esforzamos por ser tu compañero de confianza en tu viaje hacia la salud y el fitness, proporcionándote recursos, orientación y productos de alta calidad.</h3>
+
+
+
+     <!-- Titulos -->
+     <h1>Lo que Ofrecemos:</h2>
+        <br>
+        <div class="port">
+            <!-- Subtitulos -->
+            <h2>Guías de Entrenamiento Personalizadas:</h2>
+                <!-- Parrafos -->
+                <h3>Descubre nuestras detalladas guías de entrenamiento, diseñadas por expertos en fitness, que se adaptan a tus objetivos específicos. Ya sea que estés buscando perder peso, ganar masa muscular o mejorar tu resistencia, tenemos el plan perfecto para ti.</h3>
+            <br>
+            <!-- Subtitulos -->
+            <h2>Consejos de Nutrición Fundamentales:</h2>
+            <!-- Parrafos -->
+                <h3>La nutrición es clave para un estilo de vida saludable. Explora nuestros consejos de alimentación equilibrada y recetas saludables que te ayudarán a alcanzar tus metas nutricionales sin comprometer el sabor.</h3>
+        </div>
+    
+    
+       
+    
+    
+        <!-- Subtitulos -->
+        <h2>Tienda WorldFitness:</h2>
+    
+    
+        <!-- Parrafos -->
+        <h3>Sumérgete en nuestra tienda en línea, donde encontrarás una cuidada selección de productos de fitness y accesorios de alta calidad. Desde ropa deportiva hasta equipos para el hogar, cada artículo ha sido seleccionado pensando en tu comodidad y rendimiento.</h3>
+    
+    
+        <!-- Titulos -->
+        <h1>Nuestro Compromiso:</h1>
+    
+    
+        <!-- Parrafos -->
+        <h3>En WorldFitness, nos comprometemos a brindarte información precisa y confiable respaldada por expertos en fitness y nutrición. Creemos en la transparencia y la autenticidad, y nos esforzamos por ser un recurso en el que puedas confiar para obtener orientación confiable en tu viaje de bienestar.</h3>
+    
+       
+
+        <!-- Titulos -->
+        <h1>Conéctate con Nosotros:</h1>
+    
+    
+        <!-- Parrafos -->
+        <h3>¡Únete a nuestra comunidad activa en redes sociales y comparte tu viaje de fitness con nosotros! Nos encantaría escuchar tus historias, responder tus preguntas y celebrar tus logros. En WorldFitness, no estás solo en tu camino hacia una vida más saludable y activa.</h3>
+    
+    
+        <!-- Parrafos -->
+        <h3>Gracias por elegir WorldFitness como tu compañero de confianza en el viaje hacia una versión más saludable y en forma de ti mismo. ¡Juntos, lograremos grandes cosas!</h3>
+    
+    
+
+
+
+</body>
+</html>

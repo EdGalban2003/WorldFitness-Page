@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>WorldFitness</title>
+    <link rel="stylesheet" href="assets\css\styles5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">  
+</head>
+<body>
+
+    <div class="black-menu">
+        <div class="menu-item">
+            <!-- Imagen del Menu n1 -->
+            <img src="assets\img\menu.PNG" alt="MenuIcon">
+            <span>|</span>
+            <!-- Accesos a otros apartados -->
+            <span class="menu-link" data-text="¿Quiénes somos?" onclick="redirect('0_QuienesSomos.html')">¿Quiénes somos?</span>
+            <span class="menu-link" data-text="Guías de Entrenamiento" onclick="redirect('1_Entrenamiento.html')">Guías de Entrenamiento</span>
+            <span class="menu-link" data-text="Guías de Alimentación" onclick="redirect('2_Alimentacion.html')">Guías de Alimentación</span>
+            <span class="menu-link" data-text="Tienda" onclick="redirect('3_Tienda.html')">Tienda</span>
+            <span>|</span>
+            <span class="menu-link" data-text="Contactos" onclick="redirect('4_Contactos.html')">Contactos</span>
+        </div>
+    </div>
+
+    <!-- Fomulario de Contactos -->
+    <div class="contact-form">
+        <h1 class="tt">Contactos</h1>
+        <h2 class="tt1">¡Envianos un mensaje aqui!</h2>
+        <form id="contactForm">
+
+            <!-- Preguntas del formulario -->
+            <div class="pr">
+            <label for="firstName">Nombre:</label>
+            <input type="text" id="firstName" name="firstName" pattern="[A-Za-z]+" required>
+
+            <label for="lastName">Apellido:</label>
+            <input type="text" id="lastName" name="lastName" pattern="[A-Za-z]+" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]+" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="button" onclick="submitForm()">Enviar</button>
+            </div>
+
+            <!-- Redes -->
+            <h2 class="tt2">¡Contactanos en nuestras redes!</h2>
+
+            <!-- Accesos a las redes -->
+            <div class="redes">
+                <a href="https://www.instagram.com/stebanquito_daniel/" target="_blank"><i class="fa-brands fa-square-instagram fa-2xl" style="color: #ff8957;"></i></a>
+                <a href="https://github.com/EdGalban2003" target="_blank"><i class="fa-brands fa-square-github fa-2xl" style="color: #000000;"></i></a>
+                <a href="https://www.youtube.com/channel/UCn5J2TbMpoARKJEl6c8VEQw" target="_blank"><i class="fa-brands fa-youtube fa-2xl" style="color: #ff0000;"></i></a>
+                <a href="https://www.facebook.com/esteban.galban.50" target="_blank"><i class="fa-brands fa-square-facebook fa-2xl"></i></a>
+            </div>
+            
+
+        </form>
+    </div>
+
+    <script>
+        // Cambiar el título de la página
+        document.title = "WorldFitness";
+
+        function redirect(url) {
+            window.location.href = url;
+        }
+
+        function submitForm() {
+            // Obtener los valores de los campos
+            const firstName = document.getElementById("firstName").value;
+            const lastName = document.getElementById("lastName").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const message = document.getElementById("message").value;
+
+            // Validar los campos
+            if (
+                firstName === "" ||
+                lastName === "" ||
+                email === "" ||
+                phone === "" ||
+                message === ""
+            ) {
+                alert("Todos los campos son obligatorios");
+                return;
+            }
+
+            // Validar el correo electrónico
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert("Correo electrónico no válido");
+                return;
+            }
+
+            // Otras validaciones según sea necesario
+            if (!/^[A-Za-z]+$/.test(firstName) || !/^[A-Za-z]+$/.test(lastName)) {
+                alert("Nombre y apellido solo deben contener letras ¡Sin Espacios!");
+                return;
+            }
+
+            if (!/^[0-9]+$/.test(phone)) {
+                alert("El teléfono solo debe contener números");
+                return;
+            }
+
+            // Más validaciones según tus necesidades
+
+            // Simplemente muestra una alerta para este ejemplo
+            alert(`Gracias, ${firstName} ${lastName}! Tu mensaje ha sido enviado.`);
+        }
+    </script>
+</body>
+</html>

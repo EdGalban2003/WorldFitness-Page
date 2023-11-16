@@ -1,0 +1,158 @@
+/* Estilos CSS para el cuerpo y el fondo */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: grid;
+    justify-content: center; 
+    min-height: 100vh; /* Fondo del cuerpo */
+}
+
+/* Estilos CSS para el color de fondo del menú */
+.black-menu {
+    background-color: black; /* Fondo del menú */
+    color: white;
+    top: 0;
+    position: absolute;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    z-index: 1;
+    align-items: center; /* Alineación del menú */
+}
+
+/* Estilos CSS para los elementos del menú */
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos CSS para las imágenes del menú */
+.menu-item img {
+    width: 15%; 
+    border-radius: 5%;
+}
+
+/* Estilos CSS para el espacio entre elementos del menú */
+.menu-item span {
+    margin: 0 1%;
+    font-family: 'Kanit', sans-serif;
+    font-size: 2.3em;
+}
+
+/* Estilos CSS para los enlaces del menú */
+.menu-link {
+    position: relative; /* Enlaces del menú */
+    cursor: pointer;
+    font-family: 'Kanit', sans-serif;
+    font-size: 2.6em;
+}
+
+/* Estilos CSS para las animaciones de los enlaces del menú */
+.menu-link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.2em;
+    background-color: rgb(255, 255, 255);
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.7s;
+}
+
+/* Animación al pasar el cursor sobre los enlaces */
+.menu-link:hover::after {
+    transform: scaleX(1); 
+}
+
+
+/* Estilos CSS para los titulos*/
+.tt {
+    font-family: 'Kanit', sans-serif;
+    margin-bottom: 5%;
+    margin-top: 4%;
+}
+.tt1 {
+    font-family: 'Kanit', sans-serif;
+    margin-bottom: 5%;
+    margin-top: 3%;
+}
+.tt2 {
+    font-family: 'Kanit', sans-serif;
+    margin-bottom: 5%;
+    margin-top: 7%;
+}
+
+/* Estilos CSS para los parrafos*/
+.pr{
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.4em;
+
+}
+
+
+/* Estilos CSS para el formulario */
+.contact-form {
+    margin-top: 20%;
+    margin-bottom: 10%;
+    background-color: #ffffff; 
+    border-radius: 1.5em;
+    padding: 2%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); 
+    width: 100%; 
+    max-width: 50em; 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; /* Centrar el contenido del formulario */
+}
+
+/* Estilos CSS para los campos del formulario */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 2%;
+    border: none;
+    border-radius: 0.8em; 
+    box-sizing: border-box; 
+    background-color: #ebebeb; 
+
+}
+
+/* Estilos CSS para el título del formulario */
+.contact-form h2 {
+    text-align: center; 
+}
+
+/* Estilos CSS para el botón del formulario */
+.contact-form button {
+    background-color: black;
+    color: white;
+    padding: 1em;
+    border: none;
+    border-radius: 0.8em; 
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 2%; 
+}
+
+/* Estilos CSS para el botón del formulario al pasar el ratón */
+.contact-form button:hover {
+    background-color: #333;
+}
+
+
+/* Estilos adicionales para los enlaces dentro de la clase "redes" */
+.redes a {
+    text-decoration: none; 
+    font-size: 1.5em;
+}
+
+
+
+
