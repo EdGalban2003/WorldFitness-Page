@@ -287,47 +287,17 @@ height: 150%;
     display: block;
     position: absolute;
     text-align: center;
-    top: 12%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%); 
 }
 
 
-
-.textos-centrados3 {
-    display: block;
-    position: absolute;
-    text-align: justify;
-    margin-right: 55%;
-    top: 63%;
-    left: 25%;
-    transform: translate(-50%, -50%); 
-}
-
-.textos-centrados4 {
-    display: block;
-    position: absolute;
-    text-align: justify;
-    margin-right: 25%;
-    top: 73%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-}
-
-.textos-centrados5 {
-    display: block;
-    position: absolute;
-    text-align: justify;
-    margin-right: 1%;
-    top: 83%;
-    left: 75%;
-    transform: translate(-50%, -50%); 
-}
 
 .ti3 {
     color: rgb(255, 255, 0);
     font-family: 'Anton', sans-serif;
-    font-size: 3em;
+    font-size: 4.5em;
     font-style: italic;
     text-align: center;
 }
@@ -335,9 +305,8 @@ height: 150%;
 .pi3 {
     color: rgb(0, 0, 0);
     text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
-    font-size: 1.3em;
+    margin-left: 10%;
+    font-size: 1.8em;
     font-family: 'Anton', sans-serif;
 }
 
@@ -345,7 +314,7 @@ height: 150%;
     color: rgb(0, 0, 0);
     text-align: center;
     margin-left: 10%;
-    font-size: 1.4em;
+    font-size: 1.5em;
     font-style: italic;
     font-family: 'Anton', sans-serif;
 }
@@ -375,22 +344,22 @@ height: 150%;
 }
 
 .img8 {
-width: 120%;
-height: 120%;
+width: 135%;
+height: 135%;
 
 
 }
 
 .img9 {
-    width: 120%;
-    height: 120%;
+    width: 135%;
+    height: 135%;
     
     
 }
 
 .img10 {
-    width: 120%;
-    height: 120%;
+    width: 135%;
+    height: 135%;
     
     
 }
