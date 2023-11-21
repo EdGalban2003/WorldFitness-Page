@@ -32,7 +32,7 @@ body {
 
 /* Estilos CSS para las imágenes del menú */
 .menu-item img {
-    width: 15%; 
+    width: 19%; 
     border-radius: 5%;
 }
 
@@ -41,7 +41,7 @@ body {
 .menu-item span {
     margin: 0 1%;
     font-family: 'Kanit', sans-serif;
-    font-size: 2.3em;
+    font-size: 2.6em;
 }
 
 /* Estilos CSS para los enlaces del menú */
@@ -73,73 +73,377 @@ body {
 
 
 
-/* Estilos CSS para la imagen de portada */
-.imgp {
-    display: block;
-    align-items: center;
-    width: 130em; 
-    height: 66em; 
-    z-index: 0;
-    margin-top: 6%;
-    margin-left: 5%;
+/* Estilos para el primer contenedor */
+.contenedor {
+    position: relative;
+    height: 100vh; 
 }
 
-/* Estilos CSS para el carousel */
-.img-carousel {
+.imagen-contenedor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img1 {
+    object-fit: cover; 
+    width: 100%;
+    height: 120vh; 
+}
+
+.texto-boton-contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(255, 255, 255); 
+    font-size: 4em;
+    font-family: 'Kanit', sans-serif;
+    font-style: italic;
+}
+
+.titulo,
+.titulo2 {
+    margin: 0;
+}
+
+.boton {
+    margin-top: 20px;
+    font-size: 0.7em;
+    padding: 20px 30px;
+    background-color: yellow;
+    border: none;
+    cursor: pointer; 
+    margin-top: 5%;
+}
+
+.titulo2 {
+    color: yellow;
+}
+
+
+
+
+
+
+/* Estilos para el segundo contenedor */
+.contenedor2 {
     position: relative;
+    height: 100vh; 
+}
+
+
+.textos-izquierda {
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%); 
+}
+
+.ti1 {
+    color: rgb(255, 255, 0);
+    font-family: 'Anton', sans-serif;
+    font-size: 4.5em;
+    font-style: italic;
+}
+
+.pi1 {
+    color: white;
+    text-align: center;
+    margin-left: 10%;
+    text-decoration: underline;
+    font-size: 2.3em;
+}
+
+.imagenes-superpuestas1 {
+    position: absolute;
+    text-align: right;
+    top: 40%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+.imagenes-superpuestas2 {
+    position: absolute;
+    text-align: right;
+    top: 70%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+}
+
+.img3 {
+width: 140%;
+height: 140%;
+
+
+}
+
+.img4 {
+    width: 150%;
+    height: 150%;
+    
+    
+    }
+
+
+
+
+/* Estilos para el tercer contenedor */
+.contenedor3 {
+    position: relative;
+    height: 100vh; 
+}
+
+
+.textos-centrados {
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.ti2 {
+    color: rgb(255, 255, 0);
+    font-family: 'Anton', sans-serif;
+    font-size: 4.5em;
+    font-style: italic;
     text-align: center;
 }
 
-.img-carousel img {
-    max-width: 100%;
-    height: auto;
-    transition: opacity 0.8s ease-in-out; /* Ajusta la duración según tu preferencia */
-    opacity: 1;
+.pi2 {
+    color: white;
+    text-align: center;
+    margin-left: 10%;
+    text-decoration: underline;
+    font-size: 2.3em;
 }
 
-.carousel-buttons {
+.imagenes-superpuestas3 {
     position: absolute;
+    text-align: right;
+    top: 60%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.imagenes-superpuestas4 {
+    position: absolute;
+    text-align: right;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imagenes-superpuestas5 {
+    position: absolute;
+    text-align: right;
+    top: 60%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+.img5 {
+width: 150%;
+height: 150%;
+
+
+}
+
+.img6 {
+    width: 150%;
+    height: 150%;
+    
+    
+}
+
+.img7 {
+    width: 150%;
+    height: 150%;
+    
+    
+}
+
+
+
+
+
+/* Estilos para el tcuarto contenedor */
+.contenedor4 {
+    position: relative;
+    height: 100vh; 
+}
+
+.textos-centrados2 {
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+
+
+.textos-centrados3 {
+    display: block;
+    position: absolute;
+    text-align: justify;
+    margin-right: 55%;
+    top: 62.5%;
+    left: 26.4%;
+    transform: translate(-50%, -50%); 
+}
+
+.textos-centrados4 {
+    display: block;
+    position: absolute;
+    text-align: justify;
+    margin-right: 25%;
+    top: 73%;
+    left: 52.5%;
+    transform: translate(-50%, -50%); 
+}
+
+.textos-centrados5 {
+    display: block;
+    position: absolute;
+    text-align: justify;
+    margin-right: 1%;
+    top: 83%;
+    left: 77%;
+    transform: translate(-50%, -50%); 
+}
+
+.ti3 {
+    color: rgb(255, 255, 0);
+    font-family: 'Anton', sans-serif;
+    font-size: 4.5em;
+    font-style: italic;
+    text-align: center;
+}
+
+.pi3 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-left: 10%;
+    font-size: 1.8em;
+    font-family: 'Anton', sans-serif;
+}
+
+.aut{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-left: 10%;
+    font-size: 1.5em;
+    font-style: italic;
+    font-family: 'Anton', sans-serif;
+}
+
+.imagenes-superpuestas6 {
+    position: absolute;
+    text-align: right;
     top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+    left: 25%;
+    transform: translate(-50%, -50%);
 }
 
-.carousel-buttons button {
-    background-color: rgba(255, 255, 255, 0.5);
-    color: rgba(0, 0, 0, 0.5);
-    border: none;
-    cursor: pointer;
-    margin-left: 6%;
-    margin-right: 6.5%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    transition: transform 0.4s ease-in-out;
-    border-radius: 20%;
-    font-size: 2.2em;
+.imagenes-superpuestas7 {
+    position: absolute;
+    text-align: right;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-/* Aplicar transformación al pasar el ratón a los botones */
-.carousel-buttons button:hover {
-    transform: scale(1.2);
+.imagenes-superpuestas8 {
+    position: absolute;
+    text-align: right;
+    top: 70%;
+    left: 75%;
+    transform: translate(-50%, -50%);
 }
 
-/* Agrega una clase para la animación de desvanecimiento */
-.fade-in {
-    opacity: 1;
-    transition: opacity 1s ease-in-out; /* Ajusta la duración según tu preferencia */
+.img8 {
+width: 140%;
+height: 140%;
+
+
 }
 
-/* Agrega una clase para la animación de desvanecimiento inversa */
-.fade-out {
-    opacity: 0;
-    transition: opacity 1s ease-in-out; /* Ajusta la duración según tu preferencia */
+.img9 {
+    width: 150%;
+    height: 150%;
+    
+    
+}
+
+.img10 {
+    width: 150%;
+    height: 150%;
+    
+    
 }
 
 
-.port{
-    display: flex;
-    align-items: center;
 
+
+/* Estilos para el quinto contenedor */
+.contenedor5 {
+    position: relative;
+    height: 100vh; 
+}
+
+
+.textos-izquierda2 {
+    display: block;
+    position: absolute;
+    text-align: left;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%); 
+}
+
+.textos-organizados {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px; /* Espacio entre las columnas */
+    text-align: left;
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.ti4,
+.ti5,
+.pi4 {
+    margin: 0;
+    font-family: 'Anton', sans-serif;
+    font-style: italic;
+}
+
+.ti4 {
+    color: rgb(255, 255, 0);
+    font-size: 4.5em;
+}
+
+.ti5 {
+    color: rgb(0, 0, 0);
+    font-size: 3em;
+}
+
+.pi4 {
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
 }
