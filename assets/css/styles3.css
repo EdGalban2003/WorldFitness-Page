@@ -127,7 +127,7 @@ body {
 
 /* Estilos para la imagen de cada publicación */
 .blog-post img {
-    width: 550px;
+    width: 400px;
     transition: transform 0.3s ease-in-out;
 }
 
