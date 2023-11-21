@@ -73,14 +73,107 @@ body {
 
 
 
-/* Estilos CSS para la imagen de portada */
-.imgp {
-    width: 100%; 
-    height: auto; 
-    z-index: 0;
-    margin-top: 8%;
+/* Estilos para la imagen de fondo */
+.img1 {
+    object-fit: cover; 
+    width: 100%;
+    height: 120vh; 
+    position: relative;
+}
+
+.textos-centrados {
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.ti2 {
+    color: rgb(255, 255, 0);
+    font-family: 'Anton', sans-serif;
+    font-size: 4em;
+    font-style: italic;
+    text-align: center;
 }
 
 
+/* Contenedor de publicaciones */
+.blog-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap; 
+}
+
+/* Estilos para cada publicación */
+.blog-post {
+    position: relative;
+    margin-right: 1%; 
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: 20%;
+}
+
+.blog-post:last-child {
+    margin-right: 0; 
+}
+
+/* Estilos para la imagen de cada publicación */
+.blog-post img {
+    width: 550px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Estilos para la superposición de cada publicación */
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.blog-post:hover img {
+    transform: scale(1.1);
+
+}
+
+.blog-post:hover .overlay {
+    opacity: 1;
+}
 
 
+/* Estilos para el texto de cada publicación */
+.tt1 {
+    font-family: 'Anton', sans-serif;
+    color: yellow;
+    font-size: 2.5em;
+    font-style: italic;
+    text-align: center; 
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.tt2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
